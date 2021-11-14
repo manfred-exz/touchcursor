@@ -4,8 +4,8 @@ Updates from this fork
     - Whitelist not working with 64bit program
     - Shortcuts like Win+Space to switch input method was not working
 - Libraries
-    - wxMSW 2.8.12
-    - boost 1.74.0
+    - wxMSW 2.8.12 (https://github.com/wxWidgets/wxWidgets/releases/download/v2.8.12/wxMSW-2.8.12.zip)
+    - boost 1.74.0 (https://sourceforge.net/projects/boost/files/boost-binaries/1.74.0/)
 - IDE
     - Visual Studio 2019
 - Check https://github.com/manfred-exz/touchcursor/releases for binaries
