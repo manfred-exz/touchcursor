@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <BOOST_LIB_DIR>C:\repos\usr\boost_1_74_0\lib64-msvc-14.2</BOOST_LIB_DIR>
+    <WXMSW_LIB_DIR>C:\repos\usr\wxMSW-2.8.12\lib\vc_lib</WXMSW_LIB_DIR>
+    <BOOST_INCLUDE_DIR>C:\repos\usr\boost_1_74_0</BOOST_INCLUDE_DIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30523.133</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalLibraryDirectories>$(WXMSW_LIB_DIR);$(BOOST_LIB_DIR)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libboost_wserialization-vc142-mt-x64-1_74.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(BOOST_INCLUDE_DIR)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="BOOST_LIB_DIR">
+      <Value>$(BOOST_LIB_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WXMSW_LIB_DIR">
+      <Value>$(WXMSW_LIB_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="BOOST_INCLUDE_DIR">
+      <Value>$(BOOST_INCLUDE_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
