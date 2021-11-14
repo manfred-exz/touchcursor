@@ -1,3 +1,14 @@
+Updates from this fork
+==================
+- Fixed issues
+    - Whitelist not working with 64bit program
+    - Shortcuts like Win+Space to switch input method was not working
+- Libraries
+    - wxMSW 2.8.12
+    - boost 1.74.0
+- IDE
+    - Visual Studio 2019
+
 TouchCursor Readme
 ==================
 
@@ -75,7 +86,7 @@ docs
 License & Copyright
 ===================
 
-Copyright © 2010 Martin Stone.
+Copyright 2010 Martin Stone.
 
 TouchCursor is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
