@@ -8,6 +8,7 @@ Updates from this fork
     - boost 1.74.0
 - IDE
     - Visual Studio 2019
+- Check https://github.com/manfred-exz/touchcursor/releases for binaries
 
 TouchCursor Readme
 ==================
