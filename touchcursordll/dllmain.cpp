@@ -392,7 +392,7 @@ namespace {
 
     class StateMachine {
     public:
-        StateMachine() : state(idle), modifier_down(false) {}
+        StateMachine() : state(idle), win_down(false) {}
 
         void Reset() {
             state = idle;
@@ -401,10 +401,10 @@ namespace {
 
         // returns true if key should be discarded
         bool ProcessKey(WPARAM wParam, DWORD code) {
-            if (win32funcs::IsModifierKey(code))
-                modifier_down = isKeyDown(wParam);
+             if (code == VK_LWIN || code == VK_RWIN)
+                win_down = isKeyDown(wParam);
 
-            if (modifier_down)
+            if (win_down)
                 return false;
 
             Event e = numEvents;
@@ -495,7 +495,7 @@ namespace {
     private:
         static const Transition transitionTable[numStates][numEvents];
         State state;
-        bool modifier_down;
+        bool win_down;
     };
     const StateMachine::Transition StateMachine::transitionTable[numStates][numEvents] = {
         {   // idle
